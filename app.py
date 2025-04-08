@@ -16,7 +16,7 @@ horario_br = datetime.now(brasilia_tz).strftime("%d/%m/%Y %H:%M:%S")
 # Função para conectar ao PostgreSQL usando URI de Conexão
 def conectar_db():
     # URI de Conexão do PostgreSQL
-    DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://postgres:etrm7kirRbmCKAGh@maliciously-factual-longspur.data-1.use1.tembo.io:5432/postgres')
+    DATABASE_URL = os.environ.get('DATABASE_URL', '')
     
     # Conexão com o PostgreSQL
     conn = psycopg2.connect(DATABASE_URL)
